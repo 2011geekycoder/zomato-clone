@@ -5,6 +5,7 @@ body{
     padding: 0;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
+    background-color: white;
      
 } 
 
@@ -191,6 +192,7 @@ header{
 /* SECTION 3 */
 
 .section-3{
+
     height: 620px;
     background-color: rgb(255, 251, 247);
 }
@@ -226,6 +228,56 @@ header{
     width: 40%;
 }
 
+/* SECTION 4 */
+
+.section-4 {
+    width: 100%; 
+    margin: 0 1;
+    margin-bottom: 4rem;
+    
+    
+}
+
+.section-4-heading{
+    font-size: 2rem;
+    line-height: 1.2;
+    font-weight: 400;
+}
+
+.section-4-item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid rgb(209, 204, 204);
+    border-radius: 10px;
+    padding: 1px;
+    margin-bottom: 20px;
+    margin-right: 2px;
+}
+
+.section-4-item :first-child{
+    font-size: 1.2rem;
+    font-weight: lighter;
+    margin-left: 20px;
+    background: white;
+    
+}
+
+.section-4-item :last-child{
+    margin-right: 10px;
+}
+
+
+.section-4-container{
+    width: 1080px;
+    margin: 0 50;
+    
+    
+}
+
+
+
+
 /* FOOTER */
 
 footer{
@@ -234,6 +286,4 @@ footer{
     justify-content: center;
     align-items: center;
     font-family: OCR A Std, monospace;
-
-
 }
