@@ -1,0 +1,1 @@
+This is a clone of the website of the famous food delivery company Zomato using HTML and CSS.
