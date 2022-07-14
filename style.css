@@ -45,6 +45,14 @@ header{
     gap: 1.5rem ;
 }
 
+.nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  }
+
 .head{
     display: flex;
     justify-content: center ;
@@ -114,6 +122,14 @@ header{
     margin-bottom: 4rem;
 }
 
+.section-1-item{
+    transition: 0.25s all ease-in-out;
+}
+
+.section-1-item:hover {
+    transform: scale(1.11); 
+  }
+
 .section-1 .section-1-item{
     position: relative;
     width: 15rem;
@@ -174,7 +190,10 @@ header{
     border-radius: 10px;
     box-shadow: 0 2px 4px rgb(215, 215, 215);
     padding: 20px;
+    
 }
+
+
 
 .section-2-item .item-head{
     font-size: 1.2rem;
@@ -253,6 +272,7 @@ header{
     padding: 1px;
     margin-bottom: 20px;
     margin-right: 2px;
+    box-sizing: inherit;
 }
 
 .section-4-item :first-child{
