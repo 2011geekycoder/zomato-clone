@@ -136,18 +136,41 @@
                     <div class="section-4-heading">
                         <p>Explore options near me</p>
                     </div>
-                    <div class="section-4-item">
-                    <p>Popular cuisines near me</p>
-                    <i class="fa fa-chevron-down"></i>
+                    <button type="button" class="collapsible">Popular cuisines near me
+                        <i class="fa fa-chevron-down rotate"></i>
+                    </button>
+                    <div class="content">
+                    <p>Bakery food near me | Biryani food near me | Burger food near me | Cafe food near me | Chinese food near me | Desserts food near me | Healthy food near me | Ice Cream food near me | Italian food near me | Mithai food near me | Momos food near me | Mughlai food near me | North Indian food near me | Pizza food near me | Rolls food near me | Sandwich food near me | Shake food near me | South Indian food near me | Street food near me</p>
                     </div>
-                    <div class="section-4-item">
-                    <p>Popular restaurant types near me</p>
-                    <i class="fa fa-chevron-down"></i></div>
-                    <div class="section-4-item">
-                    <p>Cities we deliver to</p>
-                    <i class="fa fa-chevron-down"></i></div>
+                    <button type="button" class="collapsible">Popular restaurants types near me
+                        <i class="fa fa-chevron-down rotate"></i>
+                    </button>
+                    <div class="content">
+                    <p>Bakeries near me | Bars near me | Beverage Shops near me | Bhojanalya near me | Cafés near me | Casual Dining near me | Dessert Parlors near me | Dhabas near me | Fine Dining near me | Food Courts near me | Food Trucks near me | Kiosks near me | Paan Shop near me | Pop Ups near me | Quick Bites near me | Shacks near me | Sweet Shops near me</p>
+                    </div>
+                    <button type="button" class="collapsible">Cities we deliver to
+                        <i class="fa fa-chevron-down rotate"></i>
+                    </button>
+                    <div class="content">
+                    <p>Bakeries near me | Bars near me | Beverage Shops near me | Bhojanalya near me | Cafés near me | Casual Dining near me | Dessert Parlors near me | Dhabas near me | Fine Dining near me | Food Courts near me | Food Trucks near me | Kiosks near me | Paan Shop near me | Pop Ups near me | Quick Bites near me | Shacks near me | Sweet Shops near me</p>
                     </div>
                 </div>
+                <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.display === "block") {
+                          content.style.display = "none";
+                        } else {
+                          content.style.display = "block";
+                        }
+                      });
+                    }
+                </script>
             </section>
             <!-- FOOTER -->
             <footer>
